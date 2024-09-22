@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reaction Be Like!</title>
+    <link rel="icon" type="image/x-icon" href="Images-Videos/last pic.jpg"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Falling stars */
+        .star {
+            position: absolute;
+            top: -20px;
+            width: 25px;
+            height: 25px;
+            background-color: blue;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            opacity: 0.9;
+            box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+            animation: fall 4s linear infinite, trail 4s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes trail {
+            0% {
+                box-shadow: 0 0 20px rgba(0, 0, 255, 0.8), 0 0 30px rgba(0, 0, 255, 0.5), 0 0 40px rgba(0, 0, 255, 0.2);
+            }
+            100% {
+                box-shadow: 0 0 50px rgba(0, 0, 255, 0), 0 0 60px rgba(0, 0, 255, 0), 0 0 70px rgba(0, 0, 255, 0);
+            }
+        }
+
+        .star:nth-child(odd) {
+            animation-duration: 5s, 5s;
+        }
+
+        .star:nth-child(even) {
+            animation-duration: 6s, 6s;
+        }
+
+        .star:nth-child(1) { left: 10vw; animation-delay: 0s, 0s; }
+        .star:nth-child(2) { left: 20vw; animation-delay: 1s, 1s; }
+        .star:nth-child(3) { left: 30vw; animation-delay: 2s, 2s; }
+        .star:nth-child(4) { left: 40vw; animation-delay: 3s, 3s; }
+        .star:nth-child(5) { left: 50vw; animation-delay: 1.5s, 1.5s; }
+        .star:nth-child(6) { left: 60vw; animation-delay: 0.5s, 0.5s; }
+        .star:nth-child(7) { left: 70vw; animation-delay: 2.5s, 2.5s; }
+        .star:nth-child(8) { left: 80vw; animation-delay: 3.5s, 3.5s; }
+        .star:nth-child(9) { left: 90vw; animation-delay: 2.2s, 2.2s; }
+
+        /* Card in the center */
+        .card {
+            position: relative;
+            width: 500px;
+            height: 580px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute space between elements */
+            z-index: 2; /* Ensure the card stays above the stars */
+        }
+
+        .card video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 2; /* Make the button rectangular */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Privacy Button */
+        .privacy-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            color: #000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .privacy-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Falling stars -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+
+    <!-- Centered card -->
+    <div class="card">
+        <video controls>
+            <source src="Images-Videos/send this to your crush without context.mp4" type="video/mp4">
+        </video>
+        <p>Ab Kya aur kese Btata Moka nhi Milla kbhi dost to kbhi kaam upper se Shrmm</p><br>
+        <p>"Through every moment, I made you feel seen, heard, and cherished."</p>
+        <br>
+        <a href="https://www.instagram.com/dhayaldhruv271/" target="_blank">
+            <img src="Images-Videos/instagram.webp" alt="Instagram" width="50px" height="50px" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);" align="center">
+        </a>
+        <p align="center">Can we Connect</p>
+        <br><br>
+        <button id="sendEmailBtn"><a href="mailto:dhayaldhruv271@gmail.com" style="color: white;">You Accept Me Right! Then Just Say 'YES' On Mail So, That I Understand!</a>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById('sendEmailBtn').addEventListener('click', function() {
+            fetch('dhayaldhruv271@gmail.com', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => alert(data.message))
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+    
+    <!-- Making the Privacy & Policy! -->
+    <a href="Privacy.html" class="privacy-button">
+        &#128274; <!-- Unicode for lock icon -->
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Would You Be Mine?</title>
+    <link rel="icon" type="image/x-icon" href="Images-Videos/sh15.webp"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 3vw;
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-size: 2.5vw;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ff4500;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 120px;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff4500, 0 0 40px #ff4500;
+            animation: borderAnimation 1s infinite;
+        }
+
+        .rectangular-card {
+            color: #32cd32;
+            background-color: rgba(8, 169, 175, 0.1);
+            border: 2px solid #00ff22;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            cursor: pointer;
+        }
+
+        .rectangular-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ff11, 0 0 40px #22ff00;
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                border-color: #ff4500;
+                box-shadow: 0 0 20px #ff4500;
+            }
+            50% {
+                border-color: #32cd32;
+                box-shadow: 0 0 20px #32cd32;
+            }
+            100% {
+                border-color: #ff4500;
+                box-shadow: 0 0 20px #ff4500;
+            }
+        }
+
+        .yes {
+            color: #32cd32;
+            background-color: rgba(20, 77, 20, 0.3);
+            border-color: #00ff11;
+        }
+
+        .yes:hover {
+            background-color: rgba(50, 205, 50, 0.3);
+            border-color: #32cd32;
+        }
+
+        .no {
+            color: #ff0000;
+            background-color: rgba(86, 19, 19, 0.3);
+        }
+
+        .no:hover {
+            background-color: rgba(255, 0, 0, 0.3);
+            border-color: #ff0000;
+        }
+
+        img {
+            width: 120px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        /* Media queries for different devices */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 4vw;
+            }
+            h2 {
+                font-size: 3vw;
+            }
+            .card, .rectangular-card {
+                width: 20vw;
+            }
+            img {
+                width: 10vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6vw;
+            }
+            h2 {
+                font-size: 5vw;
+            }
+            .card, .rectangular-card {
+                width: 40vw;
+            }
+            img {
+                width: 20vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 8vw;
+            }
+            h2 {
+                font-size: 6vw;
+            }
+            .card {
+                width: 60vw;
+                padding: 10px;
+            }
+            .rectangular-card {
+                width: 70vw;
+            }
+            img {
+                width: 30vw;
+            }
+        }
+
+        /* Privacy Button */
+        .privacy-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            color: #000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .privacy-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Would You Be Mine? Mtlb Hmm Smzh Jaao Yr..</h1>
+    <h2>"I Wish Time had better timing of you and me!"</h2>
+    <a href="Privacy.html" class="privacy-button">&#128274;</a>
+    <img src="Images-Videos/seeing eyes.png" title="This Is For U">
+
+    <div class="options">
+        <div class="card yes" onclick="redirectToInstagram();">
+            <h2>YES</h2>
+        </div>
+
+        <div class="card no" onmouseover="moveNoButton();" onclick="flash('no');">
+            <h2>NO</h2>
+        </div>
+
+        <a href="Connect.html" style="text-decoration: none;">
+            <div class="card rectangular-card">
+                <h2>If Yes! Too Mein Ander Se!</h2>
+            </div>
+        </a>       
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init('wBOnvIyOH8Q3fVDG7'); // User ID from EmailJS
+        })();
+
+        function flash(type) {
+            const card = type === 'yes' ? document.querySelector('.yes') : document.querySelector('.no');
+            const animation = type === 'yes' ? 'flashGreen' : 'flashRed';
+
+            card.style.animation = `${animation} 0.5s forwards`;
+
+            if (type === 'yes') {
+                // Send email when 'YES' is clicked
+                emailjs.send('service_rd8g1ju', 'template_ory42ni', {
+                    to_name: 'User',
+                    message: 'The user has accepted your offer!'
+                })
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    // After email is successfully sent, redirect to Connect.html
+                    window.location.href = 'Connect.html';
+                })
+                .catch((error) => {
+                    console.log('FAILED...', error);
+                    // If email fails, still redirect to Connect.html
+                    window.location.href = 'Connect.html';
+                });
+            } else {
+                // Redirect immediately if 'NO' is clicked
+                setTimeout(() => {
+                    window.location.href = 'No.html';
+                }, 500);
+            }
+        }
+
+        function redirectToInstagram() {
+            // Redirect to Instagram profile
+            window.location.href = 'https://www.instagram.com/dhayaldhruv271/?hl=en';
+        }
+
+        function moveNoButton() {
+            const noButton = document.querySelector('.no');
+            const containerWidth = window.innerWidth * 0.8;
+            const containerHeight = window.innerHeight * 0.6;
+            const buttonWidth = noButton.offsetWidth;
+            const buttonHeight = noButton.offsetHeight;
+
+            const randomX = Math.random() * (containerWidth - buttonWidth);
+            const randomY = Math.random() * (containerHeight - buttonHeight);
+
+            noButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        }
+    </script>
+</body>
+</html>

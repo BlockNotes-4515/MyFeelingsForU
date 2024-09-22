@@ -1,11 +1,13 @@
-# Would__YoU__BeMine-
+<h1 style="text-align: center;">Would__YoU__BeMine-</h1>
+
  **"An interactive 💻 web project that asks the ultimate question: Would you be mine? 💖 Featuring playful animations, responsive design, and a bit of coding magic! ✨"**  Feel free to tweak it to match your style!
 
 Here’s a detailed **GitHub repository information** template, including theories, sections, and a gallery for your project:
 
 ---
 
-# **Would You Be Mine? 💖**
+<h1 style="text-align: center;">Would You Be Mine? 💖</h1>
+
 
 ![Main Image](Images-Videos/sh7.jpg)
 

@@ -56,16 +56,26 @@ For introverts, expressing feelings—especially romantic ones—can be daunting
 ## 🎨 **Project Gallery**
 
 ### 1. Main UI: Asking the Question
-![Gallery 1](Images-Videos/main-ui.png)
+![Gallery 1](Live-Demo/love1.PNG)
+![Gallery 1](Live-Demo/love2.PNG)
 
 ### 2. Playful NO Button
-![Gallery 2](Images-Videos/no-button.png)
+![Gallery 2](Live-Demo/love3.PNG)
+![Gallery 2](Live-Demo/love4.PNG)
 
 ### 3. Interactive Cards
-![Gallery 3](Images-Videos/cards-ui.png)
+![Gallery 3](Live-Demo/love5.PNG)
+![Gallery 3](Live-Demo/love6.PNG)
+![Gallery 3](Live-Demo/love7.PNG)
 
 ### 4. Yes Button (Email Trigger)
-![Gallery 4](Images-Videos/yes-button.png)
+![Gallery 4](Live-Demo/love8.PNG)
+![Gallery 4](Live-Demo/love9.PNG)
+![Gallery 4](Live-Demo/love10.PNG)
+
+### 5. GPL Liscence (Policy & Privacy)
+![Gallery 5](Live-Demo/love11.PNG)
+![Gallery 5](Live-Demo/love12.PNG)
 
 ---
 

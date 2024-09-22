@@ -7,7 +7,7 @@ Here’s a detailed **GitHub repository information** template, including theori
 
 # **Would You Be Mine? 💖**
 
-![Main Image](Images-Videos/seeing_eyes.png)
+![Main Image](Images-Videos/sh7.jpg)
 
 ---
 

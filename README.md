@@ -141,11 +141,23 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 
 ## 🖼️ **Screenshots**
 
-Here's a peek into what the project looks like:
+<p>Here's a peek into what the project looks like:</p>
 
-![Screenshot 1](Images-Videos/screenshot1.png)
-![Screenshot 2](Images-Videos/screenshot2.png)
-![Screenshot 3](Images-Videos/screenshot3.png)
+<div style="display: flex; justify-content: center; flex-wrap: wrap; margin: 20px;">
+    <div style="margin: 10px; width: 200px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; text-align: center;">
+        <img src="Live-Demo/love2.PNG" alt="Screenshot 1" style="width: 100%; height: auto;">
+    </div>
+    <div style="margin: 10px; width: 200px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; text-align: center;">
+        <img src="Live-Demo/love3.PNG" alt="Screenshot 2" style="width: 100%; height: auto;">
+    </div>
+    <div style="margin: 10px; width: 200px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; text-align: center;">
+        <img src="Live-Demo/love6.PNG" alt="Screenshot 3" style="width: 100%; height: auto;">
+    </div>
+    <div style="margin: 10px; width: 200px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; text-align: center;">
+        <img src="Live-Demo/love9.PNG" alt="Screenshot 4" style="width: 100%; height: auto;">
+    </div>
+</div>
+
 
 ---
 

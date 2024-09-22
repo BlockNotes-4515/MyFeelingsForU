@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - A Secret Just for You</title>
+  <link rel="icon" type="image/x-icon" href="Images-Videos/sh13.png"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden; /* Allow vertical scroll but prevent horizontal */
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #000000; /* Black background for better particle visibility */
+    }
+    /* Centered car container */
+    .car-container {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      color: white;
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .car-image {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+    /* Privacy Policy text style */
+    .privacy-policy {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      margin: 0 auto;
+      margin-bottom: 50px; /* Add margin for scroll */
+    }
+    .privacy-policy h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .privacy-policy p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .car-image {
+        width: 70%;
+      }
+      .privacy-policy h1 {
+        font-size: 20px;
+      }
+      .privacy-policy p {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 480px) {
+      .car-image {
+        width: 60%;
+      }
+      .privacy-policy h1 {
+        font-size: 18px;
+      }
+      .privacy-policy p {
+        font-size: 12px;
+      }
+    }
+
+    /* Neon flashing scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(45deg, #1e90ff, #32cd32);
+      border-radius: 10px;
+      animation: neon-scroll 1.5s linear infinite;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: #000;
+    }
+    @keyframes neon-scroll {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+    /*Button Animation*/
+    .back-home-button {
+    background-color: #03ff13;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .back-home-button:hover {
+    background-color: #ff0095;
+    transform: scale(1.05);
+  }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- Car container with privacy policy -->
+  <div class="car-container">
+    <img src="Images-Videos/sh13.png" alt="Car" class="car-image">
+    <div class="privacy-policy" align="center">
+      <h1>Privacy Policy 📜</h1>
+      <p>Hey, Shrestha! 😊</p>
+      <p>This is a very special and personal website, made just for you, with a lot of care and thought. Here’s how this works:</p>
+      <h2>💖 Keep It Just Between Us</h2>
+      <p>Please don’t share this website with anyone else. It's a secret, a little corner of the internet just for you, made by me (Dhruv). It's meant to make you smile and let you know how much you mean to me.</p>
+      <h2>👀 No Sharing, No Screenshots</h2>
+      <p>This is for your eyes only, so kindly don't take screenshots or share this with friends. Some things are better left as special memories just for you.</p>
+      <h2>🌐 Your Privacy</h2>
+      <p>Don’t worry, I’m not collecting any personal information or tracking you here. This is a simple and private gesture from me to you.</p>
+      <h2>🔒 Secure & Safe</h2>
+      <p>This website is safe to visit, and I’ve made sure there’s nothing harmful here, only love, kindness, and affection. 💌</p>
+      <h2>🤫 Keep it a Secret</h2>
+      <p>Let's keep this little secret between us, okay? I hope you enjoy this space I've created just for you! 😊</p>
+      <p><b>-Made With Dhruv Dhayal 💖</b></p>
+      <button class="back-home-button" onclick="location.href='index.html';">Firse Dekhne Ke Liye</button>
+    </div>
+  </div>
+
+  <!-- Include the particles.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Configuration for particles.js -->
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": ["#ff4500", "#ff0000", "#1e90ff", "#32cd32", "#ffff00"]
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          }
+        },
+        "opacity": {
+          "value": 1,
+          "random": false
+        },
+        "size": {
+          "value": 10,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 200,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>

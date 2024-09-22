@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expressing Myself</title>
+  <link rel="icon" type="image/x-icon" href="Images-Videos/sh15.webp"/>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: black;
+      color: white;
+      overflow: hidden; /* Prevent scrolling on body */
+    }
+
+    /* Privacy Button */
+    .privacy-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 24px;
+      color: #000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .privacy-button:hover {
+      background-color: rgba(255, 255, 255, 1);
+      transform: scale(1.1);
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Ensure it's in the background */
+    }
+
+    /* Centered love letter container */
+    .letter-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 90%; /* Adjusted for better visibility */
+      max-width: 600px;
+      max-height: 70%; /* Limit height to allow for scrolling */
+      overflow-y: auto; /* Enable vertical scrolling */
+      z-index: 1; /* Bring the text above the neon effect */
+      padding: 20px; /* Add some padding */
+      background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      border-radius: 10px; /* Rounded corners */
+    }
+
+    .typewriter {
+      font-size: 26px; /* Increased font size */
+      white-space: pre-wrap;
+      border-right: 2px solid rgba(255, 255, 255, 0.75); /* Blinking cursor */
+      overflow: hidden;
+      display: inline-block;
+      animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white }
+    }
+
+    /* Neon lightning effect */
+    .neon-border {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Allow clicks to pass through */
+      z-index: 0; /* Make sure it's behind the letter */
+      box-shadow: 
+        0 0 20px #ff4500, 
+        0 0 40px #ff4500, 
+        0 0 60px #ff4500,
+        inset 0 0 20px #ff4500, 
+        inset 0 0 40px #ff4500; /* Start with red neon */
+      animation: neon-flicker 1.5s infinite alternate;
+    }
+
+    @keyframes neon-flicker {
+      0% { opacity: 1; }
+      50% { opacity: 0.7; }
+      100% { opacity: 1; }
+    }
+
+    /* Button styling */
+    .button {
+      position: absolute;
+      bottom: 30px; /* Adjust this to move it higher or lower */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ff4500;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 24px; /* Increased padding */
+      font-size: 20px; /* Increased font size */
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500; /* Neon glow */
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff0000; /* Change on hover */
+      transform: translateX(-50%) scale(1.05);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .typewriter {
+        font-size: 24px; /* Slightly reduced for medium devices */
+      }
+      .button {
+        font-size: 18px; /* Adjusted for better visibility */
+        padding: 10px 20px;
+      }
+    }
+    @media (max-width: 480px) {
+      .typewriter {
+        font-size: 20px; /* Further reduced for small devices */
+      }
+      .button {
+        font-size: 16px; /* Adjusted for better visibility */
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+  <div class="neon-border" id="neon-border"></div> <!-- Neon border element -->
+
+  <!-- Centered love letter -->
+  <div class="letter-container">
+    <div class="typewriter" id="letter"></div>
+  </div>
+
+  <!-- Privacy Reasons! Read It Carefully! -->
+  <a href="Privacy.html" class="privacy-button">
+    &#128274; <!-- Unicode for lock icon -->
+  </a>
+
+  <!-- Button at the bottom center -->
+   <br><br>
+   <button class="button" onclick="window.location.href='Accept.html';">Accept & Proceed</button>
+
+
+  <!-- Include the particles.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": ["#ff4500", "#ff0000", "#1e90ff", "#32cd32", "#ffff00"]
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          }
+        },
+        "opacity": {
+          "value": 1,
+          "random": false
+        },
+        "size": {
+          "value": 5,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 200,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+    // Typewriter effect
+    const letterContent = `Hey Shrestha! 😊
+
+I’ve noticed you around, and I couldn’t help but admire your smile. 😄 
+
+You seem like such a genuine person, and I’d love to get to know you better. 🤗
+
+I know this might be a bit unconventional, but as an introvert, 🙈 
+
+I often find it hard to express myself in person, 
+
+so I thought I’d reach out like this. 💬 I hope this message brings a smile to your face, just as your smile does to mine! 🌟
+
+I really believe that our chemistry could be something special. 
+
+If you're open to it, I would love to chat sometime. We, Connect with each other on Insta 'dhayaldhruv271'. And let's keep this between us! 🤫
+
+Take care!
+
+— From Dhruv Dhayal 👋`;
+
+    const letterElement = document.getElementById('letter');
+    let index = 0;
+
+    function type() {
+      if (index < letterContent.length) {
+        letterElement.textContent += letterContent.charAt(index);
+        index++;
+        setTimeout(type, 50);
+      }
+    }
+
+    type(); // Start typing the letter
+
+    // Function to generate a random color
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Function to update neon border color every second
+    function updateNeonBorder() {
+      const neonBorder = document.getElementById('neon-border');
+      const randomColor = getRandomColor();
+      neonBorder.style.boxShadow = `
+        0 0 20px ${randomColor}, 
+        0 0 40px ${randomColor}, 
+        0 0 60px ${randomColor},
+        inset 0 0 20px ${randomColor}, 
+        inset 0 0 40px ${randomColor}
+      `;
+    }
+
+    // Set an interval to update the neon border color every second
+    setInterval(updateNeonBorder, 1000);
+  </script>
+</body>
+</html>

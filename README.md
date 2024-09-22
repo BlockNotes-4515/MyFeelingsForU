@@ -179,4 +179,11 @@ Feel free to reach out for collaboration or suggestions:
 
 ---
 
-This should give your GitHub repository a polished and professional look!
+This should give your GitHub repository a polished and professional Information about the Project!
+
+-From "DHRUV DHAYAL 💖"
+
+<div style="text-align: center; margin-top: 20px;">
+    <p>@copyright DDCo.Ltd.Pvt <br> Cooperated Mined By: DhruvDhayal Coorporations Limited!</p>
+</div>
+

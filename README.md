@@ -68,14 +68,16 @@ For introverts, expressing feelings—especially romantic ones—can be daunting
 ![Gallery 3](Live-Demo/love6.PNG)
 ![Gallery 3](Live-Demo/love7.PNG)
 
-### 4. Yes Button (Email Trigger)
+### 4. YES & NO Button (NO Button-Trigger)
 ![Gallery 4](Live-Demo/love8.PNG)
 ![Gallery 4](Live-Demo/love9.PNG)
-![Gallery 4](Live-Demo/love10.PNG)
 
-### 5. GPL Liscence (Policy & Privacy)
-![Gallery 5](Live-Demo/love11.PNG)
-![Gallery 5](Live-Demo/love12.PNG)
+### 5. Yes Button (Email Trigger)
+![Gallery 5](Live-Demo/love10.PNG)
+
+### 6. GPL Liscence (Policy & Privacy)
+![Gallery 6](Live-Demo/love11.PNG)
+![Gallery 6](Live-Demo/love12.PNG)
 
 ---
 

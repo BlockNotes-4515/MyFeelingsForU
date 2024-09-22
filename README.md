@@ -147,6 +147,9 @@ Feel free to reach out for collaboration or suggestions:
 
 - **Email:** [dhayaldhruv271@gmail.com](mailto:dhayaldhruv271@gmail.com)
 - **Instagram:** [@dhayaldhruv271](https://www.instagram.com/dhayaldhruv271/?hl=en)
+- **LinkdinL** [On-Linkdin-Connect](https://www.linkedin.com/in/dhruv-dhayal-9568b7262/)
+- **Twitter** [On_X_Twitter](https://x.com/DhayalDhruv)
+- **GitHub** [LiveDeploying-GitHub](https://github.com/BlockNotes-4515)
 
 ---
 
